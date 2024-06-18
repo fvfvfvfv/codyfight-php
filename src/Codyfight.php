@@ -76,6 +76,6 @@ class Codyfight
             throw new CodyfightException($body['message'], $body['code']);
         }
 
-        return Game::createFromArray(json_decode($response->getBody(), true));
+        return Game::fromArray(json_decode($response->getBody(), true));
     }
 }
