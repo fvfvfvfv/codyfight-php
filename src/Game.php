@@ -49,7 +49,7 @@ class Game
             $game->opponent = Player::fromArray($params['players']['opponent']);
         }
 
-        $game->specialAgents = self::specialAgentsFromArray($params['specialAgents']);
+        $game->specialAgents = self::specialAgentsFromArray($params['special_agents']);
         $game->map = Map::fromArray($params['map']);
         $game->verdict = $params['verdict'];
 
