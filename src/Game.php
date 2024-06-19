@@ -41,11 +41,11 @@ class Game
         $game->maxTurnTime = $params['state']['max_turn_time'];
         $game->turnTimeLeft = $params['state']['turn_time_left'];
 
-        if (!$params['players']['bearer']['name']) {
+        if ($params['players']['bearer']['name']) {
             $game->bearer = Player::fromArray($params['players']['bearer']);
         }
 
-        if (!$params['players']['opponent']['name']) {
+        if ($params['players']['opponent']['name']) {
             $game->opponent = Player::fromArray($params['players']['opponent']);
         }
 
