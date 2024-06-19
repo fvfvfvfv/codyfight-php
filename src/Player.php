@@ -8,11 +8,11 @@ class Player
     public string $owner;
     public array $stats;
 
-    public int $turn;
+    public ?int $turn = null;
 
     public bool $isPlayerTurn;
 
-    public array $position;
+    public ?array $position = null;
 
     public array $possibleMoves;
     public array $skills;
