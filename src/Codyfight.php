@@ -58,11 +58,11 @@ class Codyfight
      */
     private function makeRequest(string $method = 'get', array $body = []): Game
     {
-        $options['body'] = $body;
+        $options['form_params'] = $body;
         $options['headers'] = [['Content-Type' => 'application/json']];
 
-        if (empty($options['body']['ckey'])) {
-            $options['body']['ckey'] = $this->cKey;
+        if (empty($options['form_params']['ckey'])) {
+            $options['form_params']['ckey'] = $this->cKey;
         }
 
         try {
