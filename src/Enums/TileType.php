@@ -24,4 +24,6 @@ enum TileType: int
     case LESSER_OBSTACLE = 17;
     case ICE_TRAP = 18;
     case SENTRY = 19;
+    case MYSTERY_1 = 20;
+    case MYSTERY_2 = 21;
 }

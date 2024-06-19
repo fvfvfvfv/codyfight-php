@@ -3,7 +3,7 @@
   "description": "A PHP client for Codyfight",
   "type": "library",
   "license": "MIT",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "authors": [
     {
       "role": "Developer",
