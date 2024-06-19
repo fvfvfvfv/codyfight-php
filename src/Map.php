@@ -13,8 +13,10 @@ class Map
     {
         $tiles = [];
 
-        foreach ($params as $param) {
-            $tiles[] = Tile::fromArray($param);
+        if (isset($params[0]) && $params[0]) {
+            foreach ($params[0] as $tile) {
+                $tiles[] = Tile::fromArray($tile);
+            }
         }
 
         $map = new self();
