@@ -4,7 +4,7 @@ namespace Fvfvfvfv\CodyfightClient\Enums;
 
 enum GameMode: int
 {
-    case SANDBOX = 1;
-    case FRIENDLY = 2;
+    case SANDBOX = 0;
+    case FRIENDLY = 1;
     case LLAMAS_MAZE = 3;
 }
