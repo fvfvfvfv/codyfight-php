@@ -9,4 +9,6 @@ enum SpecialAgentType: int
     case LLAMA = 3;
     case RIPPER = 4;
     case BUZZ = 5;
+    case MYSTERY_1 = 6;
+    case MYSTERY_2 = 7;
 }
